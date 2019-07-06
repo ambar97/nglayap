@@ -33,52 +33,75 @@
 					<div class="row">
 						<div class="col-lg-12">
 							<div class="single-price">
-								<h4>Rekomendasi terbaik untuk anda</h4>
-								<ul class="price-list">
-									<li class="d-flex justify-content-between align-items-center" style="font-weight: bold;">
-										<span>Nama Wisata</span>
-										<span>Lokasi</span>
-										<span>Jarak</span>
-										<span>Waktu Tempuh</span>
-										<span>Harga Tiket</span>
-										<span>Perhitungan</span>
-										<div>
-											<span>Action</span>
-										</div>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>New York</span>
-										<span>New York</span>
-										<span>New York</span>
-										<span>New York</span>
-										<span>New York</span>
-										<span>New York</span>
-										<div>
-											<a href="#" class="price-btn" title="View Content"><i class="fa fa-eye"></i></a>
-											<a href="#" class="price-btn" title="Pesan Sekarang"><i class="fa fa-envelope"></i></a>
-										</div>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Maldives</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Sri Lanka</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Nepal</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Thiland</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-									<li class="d-flex justify-content-between align-items-center">
-										<span>Singapore</span>
-										<a href="#" class="price-btn">$1500</a>
-									</li>
-								</ul>
+								<div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Rekomendasi Terbaik Wisata</h4>
+                                            <div class="table-responsive m-t-40">
+                                                <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                                    <thead>
+                                                        <tr>
+                                                        	<th>No</th>
+                                                            <th>Nama Wisata</th>
+                                                            <th>Lokasi</th>
+                                                            <th>Jarak</th>
+                                                            <th>Waktu</th>
+                                                            <th>Harga Tiket</th>
+                                                            <th>%</th>
+                                                            <th>Action</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                            	<td></td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                            </tr>
+                                                            <tr>
+                                                            	<td></td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                            </tr>
+                                                            <tr>
+                                                            	<td></td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                            </tr>
+                                                            <tr>
+                                                            	<td></td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                                <td>3</td>
+                                                            </tr>
+                                                            
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 							</div>
 						</div>
 					</div>
@@ -199,5 +222,52 @@
 
 <?php $this->load->view('side/footer');?>
 <?php $this->load->view('side/js');?>
-
+                    <!-- start - This is for export functionality only -->
+                    <script>
+                  $(document).ready(function() {
+                    $('#myTable').DataTable();
+                    $(document).ready(function() {
+                        var table = $('#example').DataTable({
+                            "columnDefs": [{
+                                "visible": false,
+                                "targets": 2
+                            }],
+                            "order": [
+                            [2, 'asc']
+                            ],
+                            "displayLength": 25,
+                            "drawCallback": function(settings) {
+                                var api = this.api();
+                                var rows = api.rows({
+                                    page: 'current'
+                                }).nodes();
+                                var last = null;
+                                api.column(2, {
+                                    page: 'current'
+                                }).data().each(function(group, i) {
+                                    if (last !== group) {
+                                        $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+                                        last = group;
+                                    }
+                                });
+                            }
+                        });
+            // Order by the grouping
+            $('#example tbody').on('click', 'tr.group', function() {
+                var currentOrder = table.order()[0];
+                if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+                    table.order([2, 'desc']).draw();
+                } else {
+                    table.order([2, 'asc']).draw();
+                }
+            });
+        });
+                });
+                  $('#example23').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                    ]
+                });
+            </script>
 

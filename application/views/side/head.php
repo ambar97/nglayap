@@ -9,6 +9,8 @@
 <meta name="keywords" content="">
 <meta charset="UTF-8">
 <title>Nglayap</title>
+<link href="<?php echo base_url() ?>master/adm/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.18/datatables.min.css"/>
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo base_url()?>master/css/linearicons.css">
 <link rel="stylesheet" href="<?php echo base_url()?>master/css/font-awesome.min.css">

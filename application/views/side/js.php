@@ -2,6 +2,9 @@
 <script src="<?php echo base_url()?>master/js/popper.min.js" type="04fcf8f0a503e05f559a2582-text/javascript"></script>
 <script src="<?php echo base_url()?>master/js/vendor/bootstrap.min.js" type="04fcf8f0a503e05f559a2582-text/javascript"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA" type="04fcf8f0a503e05f559a2582-text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js" type="text/javascript"></script>
 <script src="<?php echo base_url()?>master/js/jquery-ui.js" type="04fcf8f0a503e05f559a2582-text/javascript"></script>
 <script src="<?php echo base_url()?>master/js/easing.min.js" type="04fcf8f0a503e05f559a2582-text/javascript"></script>
 <script src="<?php echo base_url()?>master/js/hoverIntent.js" type="04fcf8f0a503e05f559a2582-text/javascript"></script>
@@ -22,5 +25,5 @@
   gtag('config', 'UA-23581568-13');
 </script>
 <script src="<?php echo base_url()?>master/ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="04fcf8f0a503e05f559a2582-|49" defer=""></script></body>
-
+<script src="<?php echo base_url() ?>maste/plugins/datatables/jquery.dataTables.min.js"></script>
 </html>
