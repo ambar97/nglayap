@@ -1,344 +1,368 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <?php $this->load->view('side/head'); ?>
+<?php $this->load->view('side/navbar'); ?>
 
-<body>
+<section class="about-banner relative">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    TOURS
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Home </a> <span class="lnr lnr-arrow-right"></span> <a href="<?php echo base_url('Tours') ?>"> Tours</a></p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <?php $this->load->view('side/navbar'); ?>
-    <!-- END nav -->
 
-    <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image: url('<?php echo base_url() ?>mastere/images/ijen.jpg');"
-            data-stellar-background-ratio="0.5">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row slider-text align-items-center">
-                    <div class="col-md-7 col-sm-12 ftco-animate">
-                        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span>
-                            <span>Pariwisata</span>
-                        </p>
-                        <h2 class="mb-3" style="color:white;">Pariwisata Banyuwangi</h2>
-                    </div>
+<section class="destinations-area section-gap">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-40 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Popular Destinations</h1>
+                    <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day to.</p>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- END slider -->
-
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6 mb-4 ftco-animate">
-                            <a href="#" class="block-5"
-                                style="background-image: url('<?php echo base_url() ?>mastere/images/tour-1.jpg');">
-                                <div class="text">
-                                    <span class="price">$399</span>
-                                    <h3 class="heading">Group Tour in Maldives</h3>
-                                    <div class="post-meta">
-                                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                                    </div>
-                                    <p class="star-rate"><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star-half-full"></span> <span>500
-                                            reviews</span></p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-6 mb-4 ftco-animate">
-                            <a href="#" class="block-5"
-                                style="background-image: url('<?php echo base_url() ?>mastere/images/tour-2.jpg');">
-                                <div class="text">
-                                    <span class="price">$399</span>
-                                    <h3 class="heading">Group Tour in Maldives</h3>
-                                    <div class="post-meta">
-                                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                                    </div>
-                                    <p class="star-rate"><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star-half-full"></span> <span>500
-                                            reviews</span></p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-6 mb-4 ftco-animate">
-                            <a href="#" class="block-5"
-                                style="background-image: url('<?php echo base_url() ?>mastere/images/tour-3.jpg');">
-                                <div class="text">
-                                    <span class="price">$399</span>
-                                    <h3 class="heading">Group Tour in Maldives</h3>
-                                    <div class="post-meta">
-                                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                                    </div>
-                                    <p class="star-rate"><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star-half-full"></span> <span>500
-                                            reviews</span></p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-6 mb-4 ftco-animate">
-                            <a href="#" class="block-5"
-                                style="background-image: url('<?php echo base_url() ?>mastere/images/tour-4.jpg');">
-                                <div class="text">
-                                    <span class="price">$399</span>
-                                    <h3 class="heading">Group Tour in Maldives</h3>
-                                    <div class="post-meta">
-                                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                                    </div>
-                                    <p class="star-rate"><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star-half-full"></span> <span>500
-                                            reviews</span></p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-6 mb-4 ftco-animate">
-                            <a href="#" class="block-5"
-                                style="background-image: url('<?php echo base_url() ?>mastere/images/tour-5.jpg');">
-                                <div class="text">
-                                    <span class="price">$399</span>
-                                    <h3 class="heading">Group Tour in Maldives</h3>
-                                    <div class="post-meta">
-                                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                                    </div>
-                                    <p class="star-rate"><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star-half-full"></span> <span>500
-                                            reviews</span></p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-6 mb-4 ftco-animate">
-                            <a href="#" class="block-5"
-                                style="background-image: url('<?php echo base_url() ?>mastere/images/tour-6.jpg');">
-                                <div class="text">
-                                    <span class="price">$399</span>
-                                    <h3 class="heading">Group Tour in Maldives</h3>
-                                    <div class="post-meta">
-                                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                                    </div>
-                                    <p class="star-rate"><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star-half-full"></span> <span>500
-                                            reviews</span></p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-6 mb-4 ftco-animate">
-                            <a href="#" class="block-5"
-                                style="background-image: url('<?php echo base_url() ?>mastere/images/tour-7.jpg');">
-                                <div class="text">
-                                    <span class="price">$399</span>
-                                    <h3 class="heading">Group Tour in Maldives</h3>
-                                    <div class="post-meta">
-                                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                                    </div>
-                                    <p class="star-rate"><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star-half-full"></span> <span>500
-                                            reviews</span></p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 col-lg-6 mb-4 ftco-animate">
-                            <a href="#" class="block-5"
-                                style="background-image: url('<?php echo base_url() ?>mastere/images/tour-8.jpg');">
-                                <div class="text">
-                                    <span class="price">$399</span>
-                                    <h3 class="heading">Group Tour in Maldives</h3>
-                                    <div class="post-meta">
-                                        <span>Ameeru Ahmed Magu Male’, Maldives</span>
-                                    </div>
-                                    <p class="star-rate"><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star"></span><span
-                                            class="icon-star"></span><span class="icon-star-half-full"></span> <span>500
-                                            reviews</span></p>
-                                </div>
-                            </a>
-                        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="single-destinations">
+                    <div class="thumb">
+                        <img src="<?php echo base_url()?>master/img/hotels/d1.jpg" alt="">
                     </div>
-                    <div class="row mt-5">
-                        <div class="col text-center">
-                            <div class="block-27">
-                                <ul>
-                                    <li><a href="#">&lt;</a></li>
-                                    <li class="active"><span>1</span></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#">&gt;</a></li>
-                                </ul>
+                    <div class="details">
+                        <h4 class="d-flex justify-content-between">
+                            <span>Hilton Star Hotel</span>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- END -->
-
-                <div class="col-lg-4 sidebar">
-                    <div class="sidebar-box ftco-animate">
-                        <div class="search-tours bg-light p-4">
-                            <h3>Find your tour</h3>
-                            <form action="" method="post">
-                                <div class="fields">
-                                    <div class="row flex-column">
-
-                                        <div class="textfield-search col-sm-12 group mb-3"><input type="text"
-                                                class="form-control" placeholder="Search Location"></div>
-
-                                        <div class="check-in col-sm-12 group mb-3"><input type="text" id="checkin_date"
-                                                class="form-control" placeholder="Check-in date"></div>
-
-                                        <div class="check-out col-sm-12 group mb-3"><input type="text"
-                                                id="checkout_date" class="form-control" placeholder="Check-out date">
-                                        </div>
-                                        <div class="select-wrap col-sm-12 group mb-3">
-                                            <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                            <select name="" id="" class="form-control">
-                                                <option value="">Guest</option>
-                                                <option value="">1</option>
-                                                <option value="">2</option>
-                                                <option value="">3</option>
-                                                <option value="">4+</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-sm-12 group mb-3">
-                                            <input type="submit" class="search-submit btn btn-primary"
-                                                value="Find Flights">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="sidebar-box ftco-animate">
-                        <div class="categories">
-                            <h3>Categories</h3>
-                            <li><a href="#">Tours <span>(12)</span></a></li>
-                            <li><a href="#">Hotels <span>(22)</span></a></li>
-                            <li><a href="#">Cruises <span>(37)</span></a></li>
-                            <li><a href="#">Restaurant <span>(42)</span></a></li>
-                            <li><a href="#">Destination <span>(14)</span></a></li>
-                        </div>
-                    </div>
-
-                    <div class="sidebar-box ftco-animate">
-                        <h3>Tag Cloud</h3>
-                        <div class="tagcloud">
-                            <a href="#" class="tag-cloud-link">Life</a>
-                            <a href="#" class="tag-cloud-link">Sport</a>
-                            <a href="#" class="tag-cloud-link">Tech</a>
-                            <a href="#" class="tag-cloud-link">Travel</a>
-                            <a href="#" class="tag-cloud-link">Life</a>
-                            <a href="#" class="tag-cloud-link">Sport</a>
-                            <a href="#" class="tag-cloud-link">Tech</a>
-                            <a href="#" class="tag-cloud-link">Travel</a>
-                        </div>
-                    </div>
-
-                    <div class="sidebar-box ftco-animate">
-                        <h3>Paragraph</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem
-                            necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente
-                            consectetur similique, inventore eos fugit cupiditate numquam!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Voyage Fellow Tourist</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts.</p>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Book Now</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Flight</a></li>
-                            <li><a href="#" class="py-2 d-block">Hotels</a></li>
-                            <li><a href="#" class="py-2 d-block">Tour</a></li>
-                            <li><a href="#" class="py-2 d-block">Car Rent</a></li>
-                            <li><a href="#" class="py-2 d-block">Beach &amp; Resorts</a></li>
-                            <li><a href="#" class="py-2 d-block">Mountains</a></li>
-                            <li><a href="#" class="py-2 d-block">Cruises</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Top Deals</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Luxe Hotel</a></li>
-                            <li><a href="#" class="py-2 d-block">Venice Tours</a></li>
-                            <li><a href="#" class="py-2 d-block">Deluxe Hotels</a></li>
-                            <li><a href="#" class="py-2 d-block">Boracay Beach &amp; Resorts</a></li>
-                            <li><a href="#" class="py-2 d-block">Beach &amp; Resorts</a></li>
-                            <li><a href="#" class="py-2 d-block">Fuente Villa</a></li>
-                            <li><a href="#" class="py-2 d-block">Japan Tours</a></li>
-                            <li><a href="#" class="py-2 d-block">Philippines Tours</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Contact Information</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">198 West 21th Street, Suite 721 New York NY 10016</a>
+                        </h4>
+                        <p>
+                            View on map | 49 Reviews
+                        </p>
+                        <ul class="package-list">
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Swimming pool</span>
+                                <span>Yes</span>
                             </li>
-                            <li><a href="#" class="py-2 d-block">+ 1235 2355 98</a></li>
-                            <li><a href="#" class="py-2 d-block">info@yoursite.com</a></li>
-                            <li><a href="#" class="py-2 d-block">email@email.com</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <ul class="ftco-footer-social list-unstyled float-md-right float-lft">
-                            <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Gymnesium</span>
+                                <span>No</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Wi-fi</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Room Service</span>
+                                <span>No</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Air Condition</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Restaurant</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Price per night</span>
+                                <a href="#" class="price-btn">$250</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 text-center">
-
-                    <p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;<script>
-                        document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i class="icon-heart"
-                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
+            <div class="col-lg-4">
+                <div class="single-destinations">
+                    <div class="thumb">
+                        <img src="<?php echo base_url()?>master/img/hotels/d2.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h4 class="d-flex justify-content-between">
+                            <span>Hilton Star Hotel</span>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </h4>
+                        <p>
+                            View on map | 49 Reviews
+                        </p>
+                        <ul class="package-list">
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Swimming pool</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Gymnesium</span>
+                                <span>No</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Wi-fi</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Room Service</span>
+                                <span>No</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Air Condition</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Restaurant</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Price per night</span>
+                                <a href="#" class="price-btn">$250</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-destinations">
+                    <div class="thumb">
+                        <img src="<?php echo base_url()?>master/img/hotels/d3.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h4 class="d-flex justify-content-between">
+                            <span>Hilton Star Hotel</span>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </h4>
+                        <p>
+                            View on map | 49 Reviews
+                        </p>
+                        <ul class="package-list">
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Swimming pool</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Gymnesium</span>
+                                <span>No</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Wi-fi</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Room Service</span>
+                                <span>No</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Air Condition</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Restaurant</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Price per night</span>
+                                <a href="#" class="price-btn">$250</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-destinations">
+                    <div class="thumb">
+                        <img src="<?php echo base_url()?>master/img/hotels/d4.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h4 class="d-flex justify-content-between">
+                            <span>Hilton Star Hotel</span>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </h4>
+                        <p>
+                            View on map | 49 Reviews
+                        </p>
+                        <ul class="package-list">
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Swimming pool</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Gymnesium</span>
+                                <span>No</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Wi-fi</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Room Service</span>
+                                <span>No</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Air Condition</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Restaurant</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Price per night</span>
+                                <a href="#" class="price-btn">$250</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-destinations">
+                    <div class="thumb">
+                        <img src="<?php echo base_url()?>master/img/hotels/d5.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h4 class="d-flex justify-content-between">
+                            <span>Hilton Star Hotel</span>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </h4>
+                        <p>
+                            View on map | 49 Reviews
+                        </p>
+                        <ul class="package-list">
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Swimming pool</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Gymnesium</span>
+                                <span>No</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Wi-fi</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Room Service</span>
+                                <span>No</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Air Condition</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Restaurant</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Price per night</span>
+                                <a href="#" class="price-btn">$250</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-destinations">
+                    <div class="thumb">
+                        <img src="<?php echo base_url()?>master/img/hotels/d6.jpg" alt="">
+                    </div>
+                    <div class="details">
+                        <h4 class="d-flex justify-content-between">
+                            <span>Hilton Star Hotel</span>
+                            <div class="star">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </h4>
+                        <p>
+                            View on map | 49 Reviews
+                        </p>
+                        <ul class="package-list">
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Swimming pool</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Gymnesium</span>
+                                <span>No</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Wi-fi</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Room Service</span>
+                                <span>No</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Air Condition</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Restaurant</span>
+                                <span>Yes</span>
+                            </li>
+                            <li class="d-flex justify-content-between align-items-center">
+                                <span>Price per night</span>
+                                <a href="#" class="price-btn">$250</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
 
-
-    <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                stroke="#F96D00" /></svg></div>
-
-
-    <?php $this->load->view('side/js'); ?>
-
-</body>
-
-</html>
+<section class="home-about-area">
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-end">
+           <div class="col-lg-6 col-md-12 home-about-left">
+            <h1>
+                Did not find your Package? <br>
+                Feel free to ask us. <br>
+                We‘ll make it for you
+            </h1>
+            <p>
+                inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.
+            </p>
+            <a href="#" class="primary-btn text-uppercase">request custom price</a>
+        </div>
+        <div class="col-lg-6 col-md-12 home-about-right no-padding">
+            <img class="img-fluid" src="<?php echo base_url()?>master/img/hotels/about-img.jpg" alt="">
+        </div>
+    </div>
+</div>
+</section>
+<?php $this->load->view('side/footer'); ?>
+<?php $this->load->view('side/js'); ?>

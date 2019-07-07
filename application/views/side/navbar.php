@@ -1,25 +1,40 @@
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-    <div class="container">
-        <a class="navbar-brand" href="<?php echo base_url() ?>"><img
-                src="<?php echo base_url() ?>mastere/images/logo1.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="oi oi-menu"></span> Menu
-        </button>
-
-        <div class="collapse navbar-collapse" id="ftco-nav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item <?php if ($this->uri->segment('1') == "Home" || $this->uri->segment('1') == "") : ?>
-                  <?php echo "active" ?>
-                <?php endif; ?>"><a href="<?php echo base_url('Home') ?>" class="nav-link">Home</a></li>
-                <li class="nav-item <?php if ($this->uri->segment('1') == "Tours") : ?>
-                  <?php echo "active" ?>
-                <?php endif; ?>"><a href="<?php echo base_url('Tours') ?>" class="nav-link">Tours</a></li>
-                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                <!-- <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
-                <li class="nav-item" style=""><a href="about.html" class="nav-link" style="font-weight: bold;">Paket Kilat</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
+<header id="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-6 col-6 header-top-left">
+                    <ul>
+                        <li><a href="#">Visit Us</a></li>
+                        <li><a href="#">Buy Tickets</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-6 header-top-right">
+                    <div class="header-social">
+                        <li><a href="#"><i class="fa fa-user"> Login / Register</i></a></li>
+                        <!-- <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a> -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
+    <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="<?php echo base_url() ?>"><img src="<?php echo base_url()?>master/img/logo1.png" alt="" title="" /></a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li class="active"><a href="<?php echo base_url() ?>">Home</a></li>
+                    <li><a href="<?php echo base_url('Tours') ?>">Tour</a></li>
+                    <li><a href="<?php echo base_url('Hotels') ?>">Hotels</a></li>
+                    <li><a href="<?php echo base_url('Transportation') ?>">Transport</a></li>
+                    <li style="background-color: blue;"><a href="<?php echo base_url('Ayo_Nglayap') ?>">AYO NGLAYAP</a></li>
+                    <li><a href="<?php echo base_url('Contact') ?>">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<!--  -->
