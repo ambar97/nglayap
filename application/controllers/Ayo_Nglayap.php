@@ -13,7 +13,7 @@ class Ayo_Nglayap extends CI_Controller
     }
     public function index()
     {
-        $this->load->view('v_nglayapmu');
+        $this->load->view('v_nglayap');
     }
 }
  

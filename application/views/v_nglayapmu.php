@@ -55,44 +55,44 @@
                                                     </thead>
                                                     <tbody>
                                                             <tr>
-                                                            	<td></td>
-                                                                <td>2</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
+                                                            	<td>1</td>
+                                                                <td>Pantai Papuma</td>
+                                                                <td>Area Kebun, Lojejer, Wuluhan</td>
+                                                                <td>10 km</td>
+                                                                <td>30 Menit</td>
+                                                                <td>20.000</td>
+                                                                <td>0.96</td>
+                                                                <td><i class="fa fa-eye"></i></td>
                                                             </tr>
                                                             <tr>
-                                                            	<td></td>
-                                                                <td>2</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
+                                                            	<td>2</td>
+                                                                <td>Pantai Bandealit</td>
+                                                                <td>Area Hutan, Andongrejo, Tempurejo</td>
+                                                                <td>100 km</td>
+                                                                <td>40 Menit</td>
+                                                                <td>10.000</td>
+                                                                <td>0.80</td>
+                                                                <td><i class="fa fa-eye"></i></td>
                                                             </tr>
                                                             <tr>
-                                                            	<td></td>
-                                                                <td>2</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
+                                                            	<td>3</td>
+                                                                <td>Kantor Desa Kemuningsari Kidul</td>
+                                                                <td>Desa Kemuningsari Jenggawah,</td>
+                                                                <td>5 km</td>
+                                                                <td>20 Menit</td>
+                                                                <td>10.000</td>
+                                                                <td>0.85</td>
+                                                                <td><i class="fa fa-eye"></i></td>
                                                             </tr>
                                                             <tr>
-                                                            	<td></td>
-                                                                <td>2</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
-                                                                <td>3</td>
+                                                            	<td>4</td>
+                                                                <td>Pantai Payangan</td>
+                                                                <td>Sido Mulyo,Sumberrejo,Ambulu</td>
+                                                                <td>50 km</td>
+                                                                <td>1 jam</td>
+                                                                <td>50.000</td>
+                                                                <td>0.70</td>
+                                                                <td><i class="fa fa-eye"></i></td>
                                                             </tr>
                                                             
                                                     </tbody>
