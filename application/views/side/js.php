@@ -25,5 +25,5 @@
   gtag('config', 'UA-23581568-13');
 </script>
 <script src="<?php echo base_url()?>master/ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="04fcf8f0a503e05f559a2582-|49" defer=""></script></body>
-<script src="<?php echo base_url() ?>maste/plugins/datatables/jquery.dataTables.min.js"></script>
+
 </html>
