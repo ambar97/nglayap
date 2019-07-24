@@ -43,7 +43,8 @@
 					<div class="form-check col-lg-12">
 						<div class="col-lg-6">
 							<label for="exampleInputEmail1">Pilih Titik Awal Pemberangkatan</label>
-							<select class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1" name="titik_berangkat">
+							<select class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1" name="titik_berangkat" required="">
+								<!-- <option disabled=""> Pilih Titik Awal</option> -->
 								<option > Pilih Titik Awal</option>
 								<option value="1">Pusat Kota Jember</option>
 								<option value="2">Bandara</option>
@@ -63,8 +64,9 @@
 						<label for="exampleInputEmail1">Wisata</label>
 						<br>
 						<label for="exampleInputEmail1">Kategori Wisata</label>
-						<select class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1" name="kategori_wisata">
+						<select class="form-control custom-select" data-placeholder="Choose a Category" required="" tabindex="1" name="kategori_wisata">
 							<option disabled=""> Pilih Kategori Wisata</option>
+							<option>Pilih kategori Wisata</option>
 							<option value="null">Semua Wisata</option>
 							<option value="Pantai">Pantai</option>
 							<option value="Air Terjun">Air Terjun</option>

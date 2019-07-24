@@ -40,9 +40,12 @@ class Ayo_Nglayap extends CI_Controller
 
     	if (isset($_POST['submita'])) {
     		// echo $titik;echo $ck_mobil;echo $ck_hotel;echo $ck_wisata;echo $kategori_wisata;echo $bintang_hotel;echo $jumlah_penumpang;echo $waktu;echo $jarak;echo $harga;echo $rating;
-    		$this->M_web->perhitungan('ya','ya','ya',$data);
+    		if ($ck_wisata == 'ya' || $ck_hotel=='ya' || $ck_mobil=='ya') {
+    			$this->M_web->perhitungan('ya','ya','ya',$data);
+    		}else{
+    			echo "Pilih Salah Satu Perhitungan";
+    		}
+    		
     	}
     } 
 }
- 
-

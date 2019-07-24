@@ -84,7 +84,20 @@ class M_web extends CI_Model{
 				array_push($hasil_harga, $bobotharga);
 			}
 			//normalisasi terbobot rumus 2
-			die(var_dump($hasil_waktu));
+			// die(var_dump($hasil_waktu));
+
+			//Solusi Ideal Positif Negatif rumus 3
+			$positifwaktu = max($hasil_waktu);
+			$positifharga = max($hasil_harga);
+			$positifjarak = max($hasil_jarak);
+			// $positifrating = max($hasil_rating);
+			$negatifwaktu = min($hasil_waktu);
+			$negatifharga = min($hasil_waktu);
+			$negatifjarak = min($hasil_jarak);
+			// $negatifrating = =min($hasil_rating);
+			//Solusi Ideal Positif Negatif rumus 3
+
+			die(var_dump($negatifjarak));
 		}
 
 
@@ -131,7 +144,7 @@ class M_web extends CI_Model{
 				array_push($hasil_rating_hotel, $hitungRatingHotel);
 			}
 			//Matrik normalisasi rumus 1
-			
+
 			//normalisasi terbobot rumus 2
 			foreach ($hasil_waktu_hotel as $value) { 
 				$bobotwaktu = $data['waktu']*$value;
@@ -150,6 +163,23 @@ class M_web extends CI_Model{
 				array_push($hasil_rating, $bobotrating);
 			}
 			//normalisasi terbobot rumus 2
+
+			//Solusi Ideal Positif Negatif rumus 3
+			$positifwaktu = max($hasil_waktu);
+			$positifharga = max($hasil_harga);
+			$positifjarak = max($hasil_jarak);
+			// $positifrating = max($hasil_rating);
+			$negatifwaktu = min($hasil_waktu);
+			$negatifharga = min($hasil_waktu);
+			$negatifjarak = min($hasil_jarak);
+			// $negatifrating = =min($hasil_rating);
+			//Solusi Ideal Positif Negatif rumus 3
+
+			//jarak terbobot ideal positif dan negatif rumus 4
+				//positif
+			
+				//negatif
+			//jarak terbobot ideal positif dan negatif rumus 4
 		}
 
 
@@ -164,13 +194,18 @@ class M_web extends CI_Model{
 			$pembagi_jarak_mobil = 0;
 			$pembagi_harga_mobil = 0;
 			$pembagi_rating_mobil = 0;
-			// menampung array dari array_push
+			
 			$hasil_waktu_mobil = array(); 
 			$hasil_jarak_mobil = array();
 			$hasil_harga_mobil = array();
 			$hasil_rating_mobil = array();
-			// menampung array dari array_push
 
+			$hasil_waktu = array(); 
+			$hasil_jarak = array();
+			$hasil_harga = array();
+			$hasil_rating = array();
+
+			//Matrik Normalisasi Rumus 1
 			foreach ($joinmobil as $value) {
 				$pembagi_waktu_mobil+= $value->waktu*$value->waktu;
 				$pembagi_jarak_mobil+= $value->jarak*$value->jarak;
@@ -191,7 +226,37 @@ class M_web extends CI_Model{
 				// $hasilRatingMobil = $value->jarak/sqrt($pembagi_harga_mobil);
 				// array_push($hasil_rating_mobil, $hasilRatingMobil);
 			}
-			// die(var_dump($hasil_harga_mobil));
+			//Matrik Normalisasi Rumus 1
+
+			//normalisasi terbobot rumus 2
+			foreach ($hasil_waktu_mobil as $value) { 
+				$bobotwaktu = $data['waktu']*$value;
+				array_push($hasil_waktu, $bobotwaktu);
+			}
+			foreach ($hasil_jarak_mobil as $value) {
+				$bobotjarak = $data['jarak']*$value;
+				array_push($hasil_jarak, $bobotjarak);
+			}
+			foreach ($hasil_harga_mobil as $value) {
+				$bobotharga = $data['harga']*$value;
+				array_push($hasil_harga, $bobotharga);
+			}
+			// foreach ($hasil_rating_mobil as $value) {
+			// 	$bobotrating = $data['rating']*$value;
+			// 	array_push($hasil_rating, $bobotrating);
+			// }
+			//normalisasi terbobot rumus 2
+
+			//Solusi Ideal Positif Negatif rumus 3
+			$positifwaktu = max($hasil_waktu);
+			$positifharga = max($hasil_harga);
+			$positifjarak = max($hasil_jarak);
+			// $positifrating = max($hasil_rating);
+			$negatifwaktu = min($hasil_waktu);
+			$negatifharga = min($hasil_waktu);
+			$negatifjarak = min($hasil_jarak);
+			// $negatifrating = =min($hasil_rating);
+			//Solusi Ideal Positif Negatif rumus 3
 		}
 	}
 
