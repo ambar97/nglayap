@@ -34,74 +34,46 @@
 						<div class="col-lg-12">
 							<div class="single-price">
 								<div class="row">
-                                <div class="col-12">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Rekomendasi Terbaik Wisata</h4>
-                                            <div class="table-responsive m-t-40">
-                                                <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
-                                                    <thead>
-                                                        <tr>
-                                                        	<th>No</th>
-                                                            <th>Nama Wisata</th>
-                                                            <th>Lokasi</th>
-                                                            <th>Jarak</th>
-                                                            <th>Waktu</th>
-                                                            <th>Harga Tiket</th>
-                                                            <th>%</th>
-                                                            <th>Action</th>
+									<div class="col-12">
+										<div class="card">
+											<div class="card-body">
+												<h4 class="card-title">Rekomendasi Terbaik Wisata</h4>
+												<div class="table-responsive m-t-40">
+													<table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+														<thead>
+															<tr>
+																<th>No</th>
+																<th>Nama Wisata</th>
+																<th>Harga</th>
+																<th>Jarak</th>
+																<th>Waktu</th>
+																<!-- <th>Harga Tiket</th> -->
+																<th>%</th>
+																<th>Action</th>
 
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                            	<td>1</td>
-                                                                <td>Pantai Papuma</td>
-                                                                <td>Area Kebun, Lojejer, Wuluhan</td>
-                                                                <td>10 km</td>
-                                                                <td>30 Menit</td>
-                                                                <td>20.000</td>
-                                                                <td>0.96</td>
-                                                                <td><i class="fa fa-eye"></i></td>
-                                                            </tr>
-                                                            <tr>
-                                                            	<td>2</td>
-                                                                <td>Pantai Bandealit</td>
-                                                                <td>Area Hutan, Andongrejo, Tempurejo</td>
-                                                                <td>100 km</td>
-                                                                <td>40 Menit</td>
-                                                                <td>10.000</td>
-                                                                <td>0.80</td>
-                                                                <td><i class="fa fa-eye"></i></td>
-                                                            </tr>
-                                                            <tr>
-                                                            	<td>3</td>
-                                                                <td>Kantor Desa Kemuningsari Kidul</td>
-                                                                <td>Desa Kemuningsari Jenggawah,</td>
-                                                                <td>5 km</td>
-                                                                <td>20 Menit</td>
-                                                                <td>10.000</td>
-                                                                <td>0.85</td>
-                                                                <td><i class="fa fa-eye"></i></td>
-                                                            </tr>
-                                                            <tr>
-                                                            	<td>4</td>
-                                                                <td>Pantai Payangan</td>
-                                                                <td>Sido Mulyo,Sumberrejo,Ambulu</td>
-                                                                <td>50 km</td>
-                                                                <td>1 jam</td>
-                                                                <td>50.000</td>
-                                                                <td>0.70</td>
-                                                                <td><i class="fa fa-eye"></i></td>
-                                                            </tr>
-                                                            
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+															</tr>
+														</thead>
+														<tbody>
+															<?php
+															$no = 1; 
+															foreach ($wisata as $wisata) {?>
+																<tr>
+																	<td><?php echo $no++; ?></td>
+																	<td><?php echo $wisata['nama_wisata']; ?></td>
+																	<td>Rp. <?php echo number_format($wisata['harga']); ?></td>
+																	<td><?php echo $wisata['jarak']; ?> Km</td>
+																	<td><?php echo $wisata['waktu']; ?> Menit</td>
+																	<td><?php echo number_format($wisata['hasilHitung'],2) ; ?></td>
+																	<td><i class="fa fa-eye"></i></td>
+																</tr>
+															<?php } ?>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -222,52 +194,52 @@
 
 <?php $this->load->view('side/footer');?>
 <?php $this->load->view('side/js');?>
-                    <!-- start - This is for export functionality only -->
-                    <script>
-                  $(document).ready(function() {
-                    $('#myTable').DataTable();
-                    $(document).ready(function() {
-                        var table = $('#example').DataTable({
-                            "columnDefs": [{
-                                "visible": false,
-                                "targets": 2
-                            }],
-                            "order": [
-                            [2, 'asc']
-                            ],
-                            "displayLength": 25,
-                            "drawCallback": function(settings) {
-                                var api = this.api();
-                                var rows = api.rows({
-                                    page: 'current'
-                                }).nodes();
-                                var last = null;
-                                api.column(2, {
-                                    page: 'current'
-                                }).data().each(function(group, i) {
-                                    if (last !== group) {
-                                        $(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
-                                        last = group;
-                                    }
-                                });
-                            }
-                        });
+<!-- start - This is for export functionality only -->
+<script>
+	$(document).ready(function() {
+		$('#myTable').DataTable();
+		$(document).ready(function() {
+			var table = $('#example').DataTable({
+				"columnDefs": [{
+					"visible": false,
+					"targets": 2
+				}],
+				"order": [
+				[2, 'asc']
+				],
+				"displayLength": 25,
+				"drawCallback": function(settings) {
+					var api = this.api();
+					var rows = api.rows({
+						page: 'current'
+					}).nodes();
+					var last = null;
+					api.column(2, {
+						page: 'current'
+					}).data().each(function(group, i) {
+						if (last !== group) {
+							$(rows).eq(i).before('<tr class="group"><td colspan="5">' + group + '</td></tr>');
+							last = group;
+						}
+					});
+				}
+			});
             // Order by the grouping
             $('#example tbody').on('click', 'tr.group', function() {
-                var currentOrder = table.order()[0];
-                if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
-                    table.order([2, 'desc']).draw();
-                } else {
-                    table.order([2, 'asc']).draw();
-                }
+            	var currentOrder = table.order()[0];
+            	if (currentOrder[0] === 2 && currentOrder[1] === 'asc') {
+            		table.order([2, 'desc']).draw();
+            	} else {
+            		table.order([2, 'asc']).draw();
+            	}
             });
         });
-                });
-                  $('#example23').DataTable({
-                    dom: 'Bfrtip',
-                    buttons: [
-                    'copy', 'csv', 'excel', 'pdf', 'print'
-                    ]
-                });
-            </script>
+	});
+	$('#example23').DataTable({
+		dom: 'Bfrtip',
+		buttons: [
+		'copy', 'csv', 'excel', 'pdf', 'print'
+		]
+	});
+</script>
 

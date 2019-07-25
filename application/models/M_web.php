@@ -97,7 +97,47 @@ class M_web extends CI_Model{
 			// $negatifrating = =min($hasil_rating);
 			//Solusi Ideal Positif Negatif rumus 3
 
-			die(var_dump($negatifjarak));
+			//rumus 4
+			$hasil_D_positif = array();
+			$pangkat = 2;
+			for ($i=0; $i < count($hasil_waktu) ; $i++) { 
+				$DiP = sqrt( pow($positifwaktu-$hasil_waktu[$i],$pangkat) + pow($positifharga-$hasil_harga[$i],$pangkat) + pow($positifjarak-$hasil_jarak[$i],$pangkat));
+				array_push($hasil_D_positif, $DiP);
+			}
+
+			$hasil_D_negatif = array();
+			for ($i=0; $i < count($hasil_waktu) ; $i++) { 
+				$DiN = sqrt(pow($negatifwaktu-$hasil_waktu[$i],$pangkat)+ pow($negatifharga-$hasil_harga[$i],2) + pow($negatifjarak-$hasil_jarak[$i],2));
+				array_push($hasil_D_negatif, $DiN);
+			}
+			//rumus 4 
+
+			//rumus 5 preferensi setiap alternatif
+			$Hasil_vi = array();
+			for ($i=0; $i < count($hasil_D_positif) ; $i++) { 
+				$vi = $hasil_D_negatif[$i]/($hasil_D_negatif[$i]+$hasil_D_positif[$i]);
+				array_push($Hasil_vi, $vi);
+			}
+			//rumus 5
+			$no=0;
+			$dataahir = array();
+			foreach ($joinwisata as $value) {
+			$hasilahir  = array('nama_wisata' =>$value->nmWisata ,
+								'harga'=>$value->harga,
+								'jarak'=>$value->jarak,
+								'waktu'=>$value->waktu,
+								'hasilHitung'=>$Hasil_vi[$no],
+								 ); 
+			array_push($dataahir, $hasilahir);
+			$no++;
+			}
+			foreach ($dataahir as $key => $value) {
+				$sort[$key] = $value['hasilHitung'];
+			}
+			array_multisort($sort,SORT_DESC, $dataahir);
+			// die(var_dump($dataahir));
+				
+			return $dataahir;
 		}
 
 
@@ -177,7 +217,7 @@ class M_web extends CI_Model{
 
 			//jarak terbobot ideal positif dan negatif rumus 4
 				//positif
-			
+
 				//negatif
 			//jarak terbobot ideal positif dan negatif rumus 4
 		}
