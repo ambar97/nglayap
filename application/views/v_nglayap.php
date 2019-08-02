@@ -1,6 +1,26 @@
 <?php $this->load->view('side/head'); ?>
 <?php $this->load->view('side/navbar'); ?>
 
+<div id="modal" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Password Hint</h4>
+						<i>Password Hint ini berfungsi Apabila anda mengalami lupa password maka anda harus menggunakan jawaban dari pertanyaan ini.</i>
+					</div>
+					<div class="modal-body">
+						<p>Siapakah nama Ibu Anda ?  </p>
+						<input type="text" name="hint" class="form-control" required="">
+
+					</div>
+					<div class="modal-footer">
+						<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+						<button type="Submit" class="btn btn-primary">Save changes</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
 
 <div id="myModal" class="modal fade" role="dialog">
 	<div class="modal-dialog">
@@ -141,3 +161,8 @@
 <?php $this->load->view('side/footer');?>
 <script src="<?php echo base_url() ?>master/js/custom.min.js"></script>
 <?php $this->load->view('side/js');?>
+<script type="text/javascript">
+	$(document).ready(function() {
+			$('#modal').modal('show');
+		}
+</script>
